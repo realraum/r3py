@@ -10,8 +10,8 @@ To install *r3py* directly from this repo using pip, you need to use one of the 
 pip install git+https://github.com/realraum/r3py.git
 ```
 
-or
+Or put this into your requirements.txt:
 
 ```
-pip install git+git://github.com:realraum/r3py.git
+-e git+https://github.com/realraum/r3py.git#egg=r3py
 ```
