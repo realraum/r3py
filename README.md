@@ -1,5 +1,6 @@
 # r3py
-Python module for r3 related helper classes.
+
+Python package for r3 related helper modules.
 
 ## Install
 
