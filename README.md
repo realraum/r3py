@@ -1,4 +1,4 @@
-# r3py
+# r3py  [![Build Status](https://travis-ci.org/realraum/r3py.svg?branch=master)](https://travis-ci.org/realraum/r3py)
 
 Python package for r3 related helper modules.
 
