@@ -1,18 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from r3py import r3door
+from r3py import door
 
 
 def test_noerror():
     try:
-        r3door.printInfo()
+        door.printInfo()
     except:
         assert False
 
 
 def test_existing():
-    api = r3door()
+    api = door()
     try:
         api.getDoorstatus()
     except:
@@ -22,7 +22,7 @@ def test_existing():
 
 
 def test_nonexisting():
-    api = r3door()
+    api = door()
     try:
         api.getStatusByName('NonexistingLock')
     except:
