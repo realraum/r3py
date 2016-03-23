@@ -5,7 +5,7 @@ import paho.mqtt.client as mqtt
 import json
 
 
-class r3mqttsubscriber():
+class mqttsubscriber():
 
     def __init__(self, subscriptions='#', on_message=None):
         self.client = mqtt.Client()
@@ -29,5 +29,5 @@ class r3mqttsubscriber():
 
 
 if __name__ == '__main__':
-    sub = r3mqttsubscriber(subscriptions='realraum/r3mqtt/demo')
+    sub = mqttsubscriber(subscriptions='realraum/r3mqtt/demo')
     sub.loop_forever()

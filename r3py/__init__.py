@@ -3,7 +3,7 @@
 
 __all__ = []
 
-from .r3door import r3door
-from .r3temp import r3temp
-from .r3mqttpublisher import r3mqttpublisher
-from .r3mqttsubscriber import r3mqttsubscriber
+from .door import door
+from .temp import temp
+from .mqttpublisher import mqttpublisher
+from .mqttsubscriber import mqttsubscriber

@@ -6,7 +6,7 @@ import json
 import time
 
 
-class r3mqttpublisher():
+class mqttpublisher():
 
     def __init__(self):
         self.client = mqtt.Client()
@@ -17,7 +17,7 @@ class r3mqttpublisher():
 
 
 if __name__ == '__main__':
-    pub = r3mqttpublisher()
+    pub = mqttpublisher()
     pub.send("realraum/r3mqtt/demo",
              {"Ts": int(time.time()),
               "aBool": bool(True),

@@ -5,7 +5,7 @@ import json
 import requests
 
 
-class r3door():
+class door():
 
     def __init__(self):
         self.loadStatus()
@@ -29,10 +29,10 @@ class r3door():
 
     @staticmethod
     def printInfo():
-        api = r3door()
+        api = door()
         status = api.getDoorstatus()
         print 'locked:   ', status[0]
         print 'kontakted:', status[1]
 
 if __name__ == '__main__':
-    r3door.printInfo()
+    door.printInfo()

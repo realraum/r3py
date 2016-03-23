@@ -5,7 +5,7 @@ import requests
 import json
 
 
-class r3temp():
+class temp():
 
     def __init__(self):
         self.loadStatusData()
@@ -46,7 +46,7 @@ class r3temp():
 
     @staticmethod
     def printInfo():
-        api = r3temp()
+        api = temp()
         print 'Temp Outside:           ', api.getTempByName('Temp@Outside')
         print 'Temp in LoTHR:         ', api.getTempByName('Temp@LoTHR')
         print 'Temp in CX:            ', api.getTempByName('Temp@CX')
