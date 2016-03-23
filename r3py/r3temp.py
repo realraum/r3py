@@ -44,15 +44,16 @@ class r3temp():
         return self.getTempByName('Temp@LoTHR')
 
 
-def printInfo():
-    api = r3temp()
-    print 'Temp Outside:           ', api.getTempByName('Temp@Outside')
-    print 'Temp in LoTHR:         ', api.getTempByName('Temp@LoTHR')
-    print 'Temp in CX:            ', api.getTempByName('Temp@CX')
-    print 'Temp in OLGA Room:     ', api.getTempByName('Temp@OLGA Room')
-    print 'Temp in OLGA freezer: ', api.getTempByName('Temp@OLGA freezer')
-    print 'Temp in UPS Battery:   ', api.getTempByName('Temp@UPS Yellow Battery')
+    @staticmethod
+    def printInfo():
+        api = r3temp()
+        print 'Temp Outside:           ', api.getTempByName('Temp@Outside')
+        print 'Temp in LoTHR:         ', api.getTempByName('Temp@LoTHR')
+        print 'Temp in CX:            ', api.getTempByName('Temp@CX')
+        print 'Temp in OLGA Room:     ', api.getTempByName('Temp@OLGA Room')
+        print 'Temp in OLGA freezer: ', api.getTempByName('Temp@OLGA freezer')
+        print 'Temp in UPS Battery:   ', api.getTempByName('Temp@UPS Yellow Battery')
 
 
 if __name__ == '__main__':
-    printInfo()
+    r3temp.printInfo()

@@ -27,11 +27,12 @@ class r3door():
         return (locked, kontakted)
 
 
-def printInfo():
-    api = r3door()
-    status = api.getDoorstatus()
-    print 'locked:   ', status[0]
-    print 'kontakted:', status[1]
+    @staticmethod
+    def printInfo():
+        api = r3door()
+        status = api.getDoorstatus()
+        print 'locked:   ', status[0]
+        print 'kontakted:', status[1]
 
 if __name__ == '__main__':
-    printInfo()
+    r3door.printInfo()
