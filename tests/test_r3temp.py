@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import r3py
 from r3py import r3temp
 
 
@@ -12,7 +13,7 @@ def test_noerror():
 
 
 def test_existing():
-    api = r3temp.r3temp()
+    api = r3temp()
     try:
         api.getTemp()
         api.getTempByName('Temp@CX')
@@ -23,7 +24,7 @@ def test_existing():
 
 
 def test_nonexisting():
-    api = r3temp.r3temp()
+    api = r3temp()
     try:
         api.getTempByName('Temp@NonExist')
     except:
